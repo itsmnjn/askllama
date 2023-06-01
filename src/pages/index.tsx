@@ -73,7 +73,7 @@ export default function Home() {
       <main
         className={`flex h-screen gap-y-4 flex-col items-center p-4 ${inter.className}`}
       >
-        <h1 className="text-4xl font-bold">🦙 AskLlama</h1>
+        <h1 className="text-3xl font-bold sm:text-4xl">🦙 AskLlama</h1>
 
         <div className="flex flex-col flex-grow w-full max-w-xl overflow-auto gap-y-5">
           {chatHistory.map(({ text, user, typing }, i) => (
@@ -107,6 +107,18 @@ export default function Home() {
             Ask
           </button>
         </form>
+
+        <footer className="text-sm text-neutral-500">
+          Made by{" "}
+          <a
+            href="https://twitter.com/itsmnjn"
+            target="_blank"
+            className="underline"
+          >
+            @itsmnjn
+          </a>{" "}
+          with ❤️ plz don't abuse 😭
+        </footer>
       </main>
     </>
   );
