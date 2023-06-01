@@ -98,6 +98,7 @@ export default function Home() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             disabled={loading}
+            enterKeyHint="send"
           />
           <button
             className="px-3 ml-2 rounded-2xl bg-emerald-800 text-emerald-50"
